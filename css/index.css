@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffe66d;
+}
+.container h3,
+h4 {
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+.table-repsonsive {
+  margin-top: 1px;
+}
+.car-title {
+  display: flex;
+}
+
+.car-title {
+  text-align: center;
+}
+
+.car-title h4.title-lista {
+  /*  margin-left: 25%; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+h4 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.valor-car {
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+
+  border: 2px solid black;
+}
+input#totales.valor-car {
+  margin-left: 10.5%;
+  /*  background-color: blue; */
+}
+.table-bordered th,
+td {
+  vertical-align: middle !important;
+  text-align: center !important;
+  padding: 2px !important;
+}
+th {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 1px !important;
+  text-align: center !important;
+}
+
+.form-controls {
+  vertical-align: middle !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.btn-info {
+  margin-top: 4px !important;
+}
+input[type="checkbox"] {
+  /*  display: block; */
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type="checkbox"] {
+  /* display: none; */
+}
+
+input[type="checkbox"]:before {
+  content: "\2714";
+  /*  content: "✓"; */
+  border: 2px solid MediumSeaGreen;
+  background-color: white;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: transparent;
+  transition: 0.2s;
+}
+
+input[type="checkbox"]:active:before {
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+/* .form-control {
+  display: block;
+  width: 100%;
+  height: 30px !important;
+  padding: 6px 12px;
+  padding: 3px 6px !important;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+} */
+
+img {
+  text-align: center !important;
+  color: black;
+  font-size: 20px;
+  padding-left: 10.5%;
+}
