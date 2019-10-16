@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Poppins:400,500,600,600i,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+
+  <link rel="apple-touch-icon" tallas="57x57" href="../assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" tallas="60x60" href="../assets/favicon/apple-icon-60x60.png ">
+  <link rel=" apple-touch-icon " tamaños=" 72x72 " href="../assets/favicon/apple-icon-72x72.png ">
+  <link rel=" apple-touch-icon " tamaños="76x76" href="../assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon " tamaños=" 114x114 " href="../assets/favicon/apple-icon-114x114.png ">
+  <link rel="apple-touch-icon" tamaños="120x120" href="../assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" tamaños="144x144" href="../assets/favicon/apple-icon-144x144.png ">
+  <link rel=" apple-touch-icon " tamaños=" 152x152 " href="../assets/favicon/apple-icon-152x152.png ">
+  <link rel=" apple-touch-icon " tamaños="180x180" href="../assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image / png" tamaños="192x192" href="../assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image / png" tamaños="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image / png" tallas="96x96" href="../assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image / png" tallas="16x16" href="../assets/favicon/favicon-16x16.png ">
+  <!-- <link rel=" manifest " href="/manifest.json"> -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <title>Lista de Mercado</title>
+
+  <script src="../index.js" defer></script>
+  <link rel="manifest" href="../manifest.webmanifest">
+</head>
+
+<body>
+  <header>
+    <div class="header ">
+      <h3 align="center">Mercados OR </h3>
+      <script>
+        var f = new Date();
+        document.write('<div class="fecha">' + f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+      </script>
+    </div>
+  </header>
+  <br />
+  <div class="container-p ">
+    <div class="anuncio-promo">
+      <p>Promociones</p>
+    </div>
+
+    <div class="container-promo-list">
+      <ul>
+        <li>Arroz 🍵$1.100</li>
+        <li>Panela 🧱$1.200</li>
+        <li>Aceite 🧴$900</li>
+        <li>Leche 🥛$900</li>
+        <li>Cafe ☕$900</li>
+        <li>Frijol 🌿$900</li>
+        <li>Jabon 🧽$900</li>
+        <li>Galletas 🍪$900</li>
+        <li>Huevos 🥚$900</li>
+        <li>Azucar 🧂$1.000</li>
+        <li>Queso 🧀$1.500</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container ">
+
+  </div>
+  <br />
+  <br />
+  <form>
+    <div class="table-repsonsive">
+      <table class="table table-bordered" id="item_table">
+        <input type="text" id="totales" class="valor-car" />
+        <input type="text" id="count" class="valor-list" />
+        <br />
+        <tr>
+          <div class="form-controL car">
+            <img class="cart-compras" src="https://img.icons8.com/material-outlined/24/000000/shopping-cart-loaded.png">
+            <img class="list-compras" src="https://img.icons8.com/metro/26/000000/list.png">
+
+            <th>Seleccion</th>
+            <th>Nombre del Articulo</th>
+            <th>Cantidad</th>
+            <th>Unidad</th>
+            <th><button type="button" name="add" class="btn btn-success btn-sm add"><span
+                  class="glyphicon glyphicon-plus"></span></button></th>
+        </tr>
+      </table>
+      <div align="center">
+        <input type="submit" name="submit" class="btn btn-info" value="Borrar lista" />
+      </div>
+    </div>
+  </form>
+  </div>
+
+  <datalist id="Articulos">
+
+    <option value="Aceite">
+    <option value="Ajo en polvo">
+    <option value="Ajos">
+    <option value="Alverjas">
+    <option value="Ambientadores">
+    <option value="Apio">
+    <option value="Arracacha">
+    <option value="Arroz">
+    <option value="Avena">
+    <option value="Bananos">
+
+    <option value="Brócoli">
+    <option value="Café instantáneo">
+    <option value="Camarones">
+    <option value="Carne Molida">
+    <option value="Cebolla cabezona">
+    <option value="Cebolla en Polvo">
+    <option value="Cebollas larga">
+    <option value="Cebollín">
+    <option value="Cepillos de dientes">
+    <option value="Cereales en caja">
+
+    <option value="Cervezas">
+    <option value="Champiñones">
+    <option value="Champú">
+    <option value="Chocolate">
+    <option value="Chorizo">
+    <option value="Chuletas">
+    <option value="Coliflor">
+    <option value="Color">
+    <option value="Comino">
+    <option value="Crema de leche">
+
+    <option value="Crema de manos ">
+    <option value="Desodorantes">
+    <option value="Frijol ">
+    <option value="Garbanzos">
+    <option value="Habichuelas">
+    <option value="Harina de Trigo">
+    <option value="Hígado">
+    <option value="Huevos">
+    <option value="Jabón baño">
+    <option value="Jabón en polvo">
+
+    <option value="Jabón liquido">
+    <option value="Jamón ">
+    <option value="Jugo de Naranja">
+    <option value="Lechuga">
+    <option value="Lentejas">
+    <option value="Limón">
+    <option value="Lulo">
+    <option value="Maíz">
+    <option value="Mangos">
+    <option value="Mantequilla ">
+
+    <option value="Manzanas">
+    <option value="Maracuyá">
+    <option value="Mayonesa">
+    <option value="Mazorcas">
+    <option value="Melón">
+    <option value="Naranjas">
+    <option value="Orégano">
+    <option value="Panela">
+    <option value="Papa criolla">
+    <option value="Papa pastusa">
+
+    <option value="Papaya">
+    <option value="Papel higiénico">
+    <option value="Pasta dental">
+    <option value="Peras">
+    <option value="Cilantro">
+    <option value="Piña">
+    <option value="Plátanos verdes">
+    <option value="pollo">
+    <option value="Queso ">
+    <option value="Remolachas">
+
+    <option value="Repollo">
+    <option value="Sal">
+    <option value="Salchichas">
+    <option value="Salchichón">
+    <option value="Salmón">
+    <option value="Salsa de Tomate">
+    <option value="Salsa Soya">
+    <option value="Sandía">
+    <option value="Soperas">
+    <option value="Tilapia">
+
+    <option value="Tocineta">
+    <option value="Tocino">
+    <option value="Tomate de árbol">
+    <option value="Tomate de aliño">
+    <option value="Trucha">
+    <option value="Uvas">
+    <option value="Yuca ">
+    <option value="Zanahorias">
+  </datalist>
+</body>
+
+<footer class="footer">
+  <a href="#">Hecho con <i class="fa fa-heart"></i>
+    © 2019 </a>
+
+  <div id="instrucciones" class="instrucciones">
+    <i class="fas fa-info-circle"></i>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="../js/index.js"></script>
+<script src="../js/Modal.js"></script>
+
+</html>

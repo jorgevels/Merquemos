@@ -1,0 +1,24 @@
+{
+  "name": "AppMerquemos",
+  "version": "1.0.0",
+  "description": "Esta PWA te permite crear una lista con los elementos de tu mercado",
+  "main": "index.js",
+  "scripts": {
+    "start": "static-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgevels/Merquemos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgevels/Merquemos/issues"
+  },
+  "homepage": "https://github.com/jorgevels/Merquemos#readme",
+  "devDependencies": {
+    "static-server": "^2.2.1"
+  }
+}
