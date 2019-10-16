@@ -1,6 +1,6 @@
 {
   "background_color": "purple",
-  "theme_color": "yellow",
+  "theme_color": "#ffe66d",
   "description": "Crea tu lista de compras en tu movil",
   "display": "standalone",
   "icons": [
@@ -41,7 +41,7 @@
       "density": "4.0"
     }
   ],
-  "name": "Tu lista de compras digital",
+  "name": "Merquemos",
   "short_name": "Merquemos",
-  "start_url": "/Merquemos/assets/index.html"
+  "start_url": "/Merquemos/index.html"
 }
