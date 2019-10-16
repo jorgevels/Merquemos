@@ -152,7 +152,6 @@ img.cart-compras {
   width: auto;
   padding-left: 6.9%;
 }
-
 img.list-compras {
   height: 30px;
   width: auto;
@@ -187,6 +186,7 @@ input#count.valor-list {
   height: 20px;
   width: 25px;
   border: 0;
+  
 }
 
 .table-bordered th,
