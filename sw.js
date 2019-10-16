@@ -31,7 +31,7 @@ async function precache() {
   // Añadimos una lista de todos nuestros recursos del proyecto
   return cache.addAll([
     // Es muy importante ya que las paginas tambien las solicitamos como / debemos capturar esta request
-    "/Merquemos/",
+    /*  "/Merquemos/",
     "/Merquemos/../assets/index.html",
     "/Merquemos/../index.html",
     "/Merquemos/../index.js",
@@ -39,7 +39,7 @@ async function precache() {
     "/Merquemos/../css/main.css",
     "/Merquemos/../js/index.js",
     "/Merquemos/../js/Modal.js",
-    "/Merquemos/../assets/favicon/favicon.ico"
+    "/Merquemos/../assets/favicon/favicon.ico" */
   ]);
 }
 
