@@ -32,14 +32,14 @@ async function precache() {
   return cache.addAll([
     // Es muy importante ya que las paginas tambien las solicitamos como / debemos capturar esta request
     "/Merquemos/",
-    "/Merquemos/index.html",
-    "/Merquemos/index.js",
-    "/Merquemos/css/index.css",
-    "/Merquemos/css/main.css",
-    "/Merquemos/js/index.js",
-    "/Merquemos/js/Modal.js",
-    "/Merquemos/ico/poke.ico",
-    "/Merquemos/assets/favicon"
+    "/Merquemos/../assets/index.html",
+    "/Merquemos/../index.html",
+    "/Merquemos/../index.js",
+    "/Merquemos/../css/index.css",
+    "/Merquemos/../css/main.css",
+    "/Merquemos/../js/index.js",
+    "/Merquemos/../js/Modal.js",
+    "/Merquemos/../assets/favicon/favicon.ico"
   ]);
 }
 
