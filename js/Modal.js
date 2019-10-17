@@ -4,7 +4,7 @@ $instructions.addEventListener("click", () => {
     type: "info",
     title: "Merquemos",
     html: `<div style="text-align: left;"><strong>1.-</strong>No mas listas de compras en papel.</div>
-      <div style="text-align: left;"><strong>2.-</strong>Con esta PWA podras crear tus listas de compras.</div>
+      <div style="text-align: left;"><strong>2.-</strong>Con esta PWA podras crear tus listas de compras desde tu telefono.</div>
                  <div style="text-align: left;"><strong>3.-</strong>Con el boton del signo mas de color verde, podras agregar tus articulos a una lista muy cool.</div>
                  <div style="text-align: left;"><strong>4.-</strong>Puedes seleccionar la cantidad y la unidad que desees.</div>
                  <div style="text-align: left;"><strong>5.-</strong>Si quieres eliminar un articulo de la lista, con el boton del signo menos de color rojo, lo podras hacer.</div>
