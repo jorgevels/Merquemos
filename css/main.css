@@ -47,11 +47,12 @@ body {
 }
 
 .container-main_title h1 {
+  font-family: "Lobster";
   display: flex;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 4rem;
-  font-weight: 700;
+  /* font-weight: 400; */
 }
 
 .footer {
