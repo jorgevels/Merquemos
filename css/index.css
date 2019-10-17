@@ -2,15 +2,17 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #ffe66d;
+  background: linear-gradient(#f7fff7, #f7f385);
   font-family: "Lato", sans-serif;
   font-family: "Poppins", sans-serif;
+
+  min-height: calc(100vh - 0px);
+  max-width: 100%;
 }
 
 .header h3 {
   display: flex;
-  /* background-color: #fd3e81;  */
-  background-color: #ff570a;
+  background-color: #f1d302;
   height: 40px;
   font-family: "Lobster";
   align-items: center;
@@ -25,7 +27,8 @@ body {
   padding-left: 68%;
 }
 .anuncio-promo p {
-  background-color: #fd3e81;
+  /*  background-color: #fd3e81; */
+  background-color: #f1d302;
   border-radius: 3px;
   text-align: center;
   color: black;
@@ -132,6 +135,7 @@ ul {
 .fecha {
   border-radius: 25px;
   font-family: "Muli", sans-serif;
+  color: #423a01;
   font-size: 12px;
   height: 25px;
   min-width: 100%;
@@ -198,8 +202,8 @@ td {
 }
 th {
   text-align: center;
-  background-color: orange;
-  border: 1px solid #ffe66d !important;
+  background-color: #f6e35e;
+  border: 1px solid #f7fff7 !important;
   border-radius: 5px;
 }
 

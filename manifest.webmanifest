@@ -1,6 +1,6 @@
 {
   "background_color": "purple",
-  "theme_color": "#FF9463",
+  "theme_color": "#f7f385",
   "description": "Crea tu lista de compras en tu movil",
   "display": "standalone",
   "icons": [
