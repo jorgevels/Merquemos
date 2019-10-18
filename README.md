@@ -33,7 +33,7 @@ Al ingresar al link desde tu dispositivo movil o table se desplegara en la parte
 
 Si das click en aceptar la PWA se instalara en tu telefono y esta se ubicara en la pantalla principal donde estan tus aplicaciones instaladas y desde halli con un solo click podras ingresar a la aplicacion.
 
-###Si das click en el boton de cancelar la instalacion se cancelara y no tendras otra oportunidad para instalar la PWA.
+### Si das click en el boton de cancelar la instalacion se cancelara y no tendras otra oportunidad para instalar la PWA.
 
 _Esta PWA le permite a los usurios utilizarla sin una conexion a interner despues de haberla utilizado por primera vez_
 
