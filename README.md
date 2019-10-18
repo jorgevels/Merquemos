@@ -10,7 +10,10 @@ Mira **Deployment** https://jorgevels.github.io/Merquemos/.
 
 ### Pre-requisitos 📋
 
-para correr este proyecto en modo desarrollo solo debes actulizar las dependencias de desarrollo con el comando npm install y npm start para correr el proyecto
+Para correr este proyecto en modo desarrollo solo debes actualizar las dependencias de desarrollo con el comando;
+
+- **npm install** - para instalar las dependencias
+- **npm start** - para correr el proyecto
 
 Lo puedes instalar en tu ordenador o cualquier dispositivo movil, solo necesitas una coneccion a internet y un navegador web.
 
@@ -54,13 +57,14 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (MTI) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (MTI) - mira el archivo [LICENSE](LICENSE) para detalles
 
 ## Expresiones de Gratitud 🎁
 
 - Comenta a otros sobre este proyecto 📢
+- Comparte a otros este proyecto ✈
 - Invita una cerveza 🍺 a alguien del equipo.
-- Da las gracias públicamente 🤓.
+- Da las gracias públicamente 👍🤓.
 - etc.
 
 ---
