@@ -1,5 +1,5 @@
 {
-  "background_linearGradient": "(#f7fff7, #f7f385)",
+  "background_linearGradient": "#f7fff7, #f7f385",
 
   "theme_color": "#f7f385",
   "description": "Crea tu lista de compras en tu movil",
