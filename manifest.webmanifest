@@ -15,5 +15,7 @@
       "type": "image/png"
     }
   ],
+  "name": "Lista de Compras",
+  "short_name": "Merquemos",
   "start_url": "/Merquemos/index.html"
 }
