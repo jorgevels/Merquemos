@@ -17,30 +17,12 @@ function confirmExit() {
   });
 } */
 
-/* var exception = true; */
-/* window.onbeforeunload = confirmExit;
+window.onbeforeunload = confirmExit;
 function confirmExit() {
-  return (
-    Swal,
-    Swal.fire({
-      type: "warning",
-      title: `Deseas salir! <br>`,
-      text: "Si sales de perderan los cambios",
-      showCancelButton: false,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Si",
-      cancelButtonText: "No"
-    }).then(exception => {
-      if (!exception.value) onbeforeunload();
-      message = "";
-    })
-  ); */
+  return "Esta seguro de querer continuar?";
+}
 
-  /* if (!exception) {
-  } */
-
-var testInBrowser = false; // set this to true to test in browser
+/* var testInBrowser = false; // set this to true to test in browser
 if (   testInBrowser 
     || 
        /Android/i.test(navigator.userAgent)
@@ -108,4 +90,4 @@ function getCookie(cname) {
     }
   }
   return "";
-}
+} */
