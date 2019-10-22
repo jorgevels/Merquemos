@@ -18,9 +18,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Poppins:400,500,600,600i,700&display=swap"
     rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/index.css">
 
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.css" rel="stylesheet" /> -->
   <meta name="msapplication-TileImage" content="../assets/favicon/mstile-150x150.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
@@ -73,7 +75,7 @@
   </div>
   <br />
   <br />
-  <form>
+  <form id="MiFormulario">
     <div class="table-repsonsive">
       <table class="table table-bordered" id="item_table">
         <input type="text" id="totales" class="valor-car" />
@@ -94,8 +96,11 @@
                   class="glyphicon glyphicon-plus"></span></button></th>
         </tr>
       </table>
-      <div align="center">
-        <input type="submit" name="submit" class="btn btn-info" value="Borrar lista" />
+      <div id="advertencia" class="advertencia" align="center">
+        <!-- <input type="submit" name="submit" class="btn btn-info" id="delete" value="Borrar lista" /> -->
+        <input type="submit" class="btn btn-info" id="ejecuta" value="Borrar lista" onclick="pregunta(event)" />
+
+        <!-- onclick="preguntar(event)" -->
       </div>
     </div>
   </form>
@@ -200,6 +205,7 @@
     <option value="Yuca ">
     <option value="Zanahorias">
   </datalist>
+
 </body>
 
 <footer class="footer">
@@ -210,10 +216,19 @@
     <i class="fas fa-info-circle"></i>
   </div>
 </footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.js"></script>
+
 <script src="../js/index.js"></script>
 <script src="../js/Modal.js"></script>
-<script src="../js/EventAtras.js"></script>
+<script src="../js/ModalBorrar.js"></script>
+
+
 
 
 
