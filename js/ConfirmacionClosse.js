@@ -2,7 +2,7 @@ let popHandler = () => {
   Swal.fire({
     type: "warning",
     title: `Deseas salir! <br>`,
-    text: "Si sales de perderan los cambios en tu lista",
+    text: "Si sales se perderan los cambios en tu lista",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
     cancelButtonColor: "#d33",
