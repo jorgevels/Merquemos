@@ -38,7 +38,8 @@
 </head>
 
 <body>
-  <script src="../js/ConfirmacionClosse.js"></script>
+
+
   <header>
     <div class="header ">
       <h3 align="center">Mercados OR </h3>
@@ -46,8 +47,12 @@
         var f = new Date();
         document.write('<div class="fecha">' + f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
       </script>
+
+
     </div>
   </header>
+
+
   <br />
   <div class="container-p ">
     <div class="anuncio-promo">
@@ -70,41 +75,49 @@
       </ul>
     </div>
   </div>
-  <div class="container ">
+  <!-- <div class="container ">
 
-  </div>
+  </div> -->
   <br />
   <br />
   <form id="MiFormulario">
     <div class="table-repsonsive">
       <table class="table table-bordered" id="item_table">
-        <input type="text" id="totales" class="valor-car" />
-        <input type="text" id="count" class="valor-list" />
+
+        <div class="cantidad-car-lis">
+
+          <input type="text" id="totales" class="valor-car" />
+          <input type="text" id="count" class="valor-list" />
+        </div>
         <br />
         <tr>
-          <div class="form-controL car">
+          <!-- <div class="form-controL car"> -->
+          <div class="images-compra">
             <img class="cart-compras" src="../assets/images/carrito-cargado.png" alt="">
+            <!--  <h3>Tu carrito</h3> -->
             <!-- <img class="cart-compras" src="https://img.icons8.com/material-outlined/24/000000/shopping-cart-loaded.png"> -->
             <!-- <img class="list-compras" src="https://img.icons8.com/metro/26/000000/list.png"> -->
             <img class="list-compras" src="../assets/images/lista-48.png" alt="">
+            <!-- <h3>Tu lista</h3> -->
+          </div>
 
-            <th>Seleccion</th>
-            <th>Nombre del Articulo</th>
-            <th>Cantidad</th>
-            <th>Unidad</th>
-            <th><button type="button" name="add" class="btn btn-success btn-sm add"><span
-                  class="glyphicon glyphicon-plus"></span></button></th>
+          <th>Seleccion</th>
+          <th>Nombre del Articulo</th>
+          <th>Cantidad</th>
+          <th>Unidad</th>
+          <th><button type="button" name="add" class="btn btn-success btn-sm add"><span
+                class="glyphicon glyphicon-plus"></span></button></th>
         </tr>
       </table>
       <div id="advertencia" class="advertencia" align="center">
-        <!-- <input type="submit" name="submit" class="btn btn-info" id="delete" value="Borrar lista" /> -->
+
         <input type="submit" class="btn btn-info" id="ejecuta" value="Borrar lista" onclick="pregunta(event)" />
 
         <!-- onclick="preguntar(event)" -->
       </div>
     </div>
   </form>
-  </div>
+  <!-- </div> -->
 
   <datalist id="Articulos">
 
@@ -230,6 +243,7 @@
 <script src="../js/index.js"></script>
 <script src="../js/Modal.js"></script>
 <script src="../js/ModalBorrar.js"></script>
+<script src="../js/ConfirmacionClosse.js"></script>
 
 
 

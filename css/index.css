@@ -5,23 +5,21 @@ body {
   background: linear-gradient(#f7fff7, #f7f385);
   font-family: "Lato", sans-serif;
   font-family: "Poppins", sans-serif;
-
   min-height: calc(100vh - 0px);
   max-width: 100%;
 }
 
-/*  */
-
-/*  */
-
 .header h3 {
   display: flex;
   background-color: #f1d302;
-  height: 40px;
+  /*  height: 40px; */
+  height: 50px;
   font-family: "Lobster";
   align-items: center;
   justify-content: center;
   margin: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .container-p {
@@ -29,6 +27,7 @@ body {
   position: absolute;
   text-align: center;
   padding-left: 68%;
+  position: fixed;
 }
 .anuncio-promo p {
   /*  background-color: #fd3e81; */
@@ -39,19 +38,24 @@ body {
   width: 130px;
   margin: 0;
   font-weight: 600;
-  margin-top: -40px;
+  /*  margin-top: -40px; */
+  margin-top: -10px;
+  position: fixed;
 }
 
 .container-promo-list {
   background-color: #fd3e81;
   border-radius: 3px;
-  margin-top: 2px;
+  /*   margin-top: 2px; */
+  margin-top: 9px;
+
   width: 130px;
   height: 20px;
   color: #fff;
   font-size: 15px;
   line-height: 20px;
   overflow: hidden;
+  position: fixed;
 }
 
 ul {
@@ -135,6 +139,7 @@ ul {
 .container {
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 .fecha {
   border-radius: 25px;
@@ -144,31 +149,56 @@ ul {
   height: 25px;
   min-width: 100%;
   position: absolute;
-  margin-top: -14px;
+  /*   margin-top: -14px; */
+  margin-top: 35px;
   text-align: center;
+  position: fixed;
 }
 
 .table-repsonsive {
-  margin: -58px 2px 2px 2px;
+  /*  margin: -58px 2px 2px 2px; */
+  margin: -27px 2px 2px 2px;
 }
 
 .form-control.car {
   text-align: left;
 }
 
-img.cart-compras {
-  height: 30px;
-  width: auto;
-  padding-left: 6.9%;
-}
-img.list-compras {
-  height: 30px;
-  width: auto;
-  padding-left: 6.5%;
+.images-compra {
+  display: flex;
+  position: fixed;
+  margin-left: 5%;
 }
 
-input#totales.valor-car {
-  margin-left: 6.9%;
+.images-compra img.cart-compras {
+  height: 30px;
+  width: auto;
+  /*  padding-left: 6.9%; */
+  /* padding-left: 40%; */
+  margin-top: -33px;
+  /* position: absolute; */
+  /* position: fixed; */
+}
+.images-compra img.list-compras {
+  height: 30px;
+  width: auto;
+  /* padding-left: 6.5%; */
+  /* padding-left: 10.5%; */
+  margin-top: -33px;
+  /*  position: absolute; */
+  /*  position: fixed; */
+  margin-left: 95%;
+}
+.cantidad-car-lis {
+  display: flex;
+  position: fixed;
+  margin-left: 1%;
+}
+
+.cantidad-car-lis input#totales.valor-car {
+  /*  margin-left: 6.9%; */
+  /* margin-left: 8%; */
+  margin-left: 110%;
 }
 
 .valor-car {
@@ -180,10 +210,13 @@ input#totales.valor-car {
   height: 20px;
   width: 25px;
   border: 0;
+  margin-top: -30px;
+  /*  margin-left: 8%; */
 }
 
-input#count.valor-list {
-  margin-left: 6.7%;
+.cantidad-car-lis input#count.valor-list {
+  /* margin-left: 6.7%; */
+  margin-left: 130%;
 }
 
 .valor-list {
@@ -195,6 +228,7 @@ input#count.valor-list {
   height: 20px;
   width: 25px;
   border: 0;
+  margin-top: -30px;
 }
 
 .table-bordered th,
@@ -254,8 +288,12 @@ input[type="checkbox"]:checked:before {
   color: #fff;
 }
 
-#Articulos option {
-  font-weight: bold;
+.btn-info {
+  margin: -15px 0 45px 0;
+}
+
+.glyphicon {
+  position: inherit;
 }
 
 .footer {
@@ -313,11 +351,27 @@ input[type="checkbox"]:checked:before {
   font-size: 1.5rem !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .images-compra {
+    display: flex;
+    position: fixed;
+    margin-left: 0%;
+  }
+
+  .images-compra img.list-compras {
+    height: 30px;
+    width: auto;
+    /* padding-left: 6.5%; */
+    /* padding-left: 10.5%; */
+    margin-top: -33px;
+    /*  position: absolute; */
+    /*  position: fixed; */
+    margin-left: 5%;
   }
 
   img.cart-compras {
@@ -329,6 +383,41 @@ input[type="checkbox"]:checked:before {
     height: 30px;
     width: auto;
     padding-left: 6.5%;
+  }
+  .cantidad-car-lis input#totales.valor-car {
+    /*  margin-left: 6.9%; */
+    /* margin-left: 8%; */
+    margin-left: 1%;
+  }
+
+  .valor-car {
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 20px;
+    width: 25px;
+    border: 0;
+    margin-top: -30px;
+    /*  margin-left: 8%; */
+  }
+
+  .cantidad-car-lis input#count.valor-list {
+    /* margin-left: 6.7%; */
+    margin-left: 28%;
+  }
+
+  .valor-list {
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 20px;
+    width: 25px;
+    border: 0;
+    margin-top: -30px;
   }
   input#count.valor-list {
     margin-left: 7.9%;
