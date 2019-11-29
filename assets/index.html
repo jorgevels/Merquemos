@@ -20,9 +20,8 @@
     rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/index.css">
 
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.css" rel="stylesheet" /> -->
+
   <meta name="msapplication-TileImage" content="../assets/favicon/mstile-150x150.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
@@ -30,36 +29,33 @@
   <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-
+  <link rel="manifest" href="../manifest.webmanifest">
   <title>Lista de Mercado</title>
 
+  <link rel="stylesheet" href="../css/index.css">
   <script src="../index.js" defer></script>
-  <link rel="manifest" href="../manifest.webmanifest">
 </head>
 
 <body>
-
 
   <header>
     <div class="header ">
       <h3 align="center">Mercados OR </h3>
       <script>
         var f = new Date();
-        document.write('<div class="fecha">' + f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
+        document.write('<div class="header-fecha">' + f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear());
       </script>
-
-
     </div>
   </header>
 
 
   <br />
-  <div class="container-p ">
-    <div class="anuncio-promo">
+  <div class="header-container-promo ">
+    <div class="header-anuncio-promo">
       <p>Promociones</p>
     </div>
 
-    <div class="container-promo-list">
+    <div class="header-container-promo-list">
       <ul>
         <li>Arroz 🍵$1.100</li>
         <li>Panela 🧱$1.200</li>
@@ -75,32 +71,26 @@
       </ul>
     </div>
   </div>
-  <!-- <div class="container ">
 
-  </div> -->
+  <div class="header-cantidad-car-lis">
+    <input type="text" id="totales" class="header-valor-car" />
+    <input type="text" id="count" class="header-valor-list" />
+  </div>
+
+  <div class="header-images-compra">
+    <img class="header-cart-compras" src="../assets/images/carrito-cargado.png" alt="">
+    <img class="header-list-compras" src="../assets/images/lista-48.png" alt="">
+  </div>
+
   <br />
   <br />
+
+
   <form id="MiFormulario">
     <div class="table-repsonsive">
       <table class="table table-bordered" id="item_table">
-
-        <div class="cantidad-car-lis">
-
-          <input type="text" id="totales" class="valor-car" />
-          <input type="text" id="count" class="valor-list" />
-        </div>
         <br />
         <tr>
-          <!-- <div class="form-controL car"> -->
-          <div class="images-compra">
-            <img class="cart-compras" src="../assets/images/carrito-cargado.png" alt="">
-            <!--  <h3>Tu carrito</h3> -->
-            <!-- <img class="cart-compras" src="https://img.icons8.com/material-outlined/24/000000/shopping-cart-loaded.png"> -->
-            <!-- <img class="list-compras" src="https://img.icons8.com/metro/26/000000/list.png"> -->
-            <img class="list-compras" src="../assets/images/lista-48.png" alt="">
-            <!-- <h3>Tu lista</h3> -->
-          </div>
-
           <th>Seleccion</th>
           <th>Nombre del Articulo</th>
           <th>Cantidad</th>
@@ -111,13 +101,11 @@
       </table>
       <div id="advertencia" class="advertencia" align="center">
 
-        <input type="submit" class="btn btn-info" id="ejecuta" value="Borrar lista" onclick="pregunta(event)" />
-
-        <!-- onclick="preguntar(event)" -->
+        <input type="submit" class="btn btn-info" id="ejecuta" value="Borrar lista" />
       </div>
     </div>
   </form>
-  <!-- </div> -->
+
 
   <datalist id="Articulos">
 
@@ -222,6 +210,18 @@
     <option value="Zanahorias">
   </datalist>
 
+  <!-- Esta capa es la que se muestra transparente y que contiene el cuadro de dialogo -->
+  <div id="capa">
+    <div>
+      <div class="title"><i class="far fa-trash-alt"></i></div>
+      <div class="text">Estas seguro de borrar los Articulos de la lista?</div>
+      <div class="buttons">
+        <input type="button" class="button-borrar" value="Si" id="ok">&nbsp;
+        <input type="button" class="button-cancelar" value="No" id="ko">
+      </div>
+    </div>
+  </div>
+
 </body>
 
 <footer class="footer">
@@ -240,10 +240,14 @@
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.js"></script>
 
+
+
+
 <script src="../js/index.js"></script>
 <script src="../js/Modal.js"></script>
 <script src="../js/ModalBorrar.js"></script>
 <script src="../js/ConfirmacionClosse.js"></script>
+<script src="../js/Guadar.js"></script>
 
 
 

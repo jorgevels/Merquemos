@@ -9,6 +9,90 @@ body {
   max-width: 100%;
 }
 
+#capa {
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#capa > div:first-child {
+  margin: 0;
+  position: absolute;
+  position: fixed;
+  /* height: 30%; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  border: 1px solid #ebebeb;
+  padding: 5px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+}
+
+.title {
+  /* background-color: #eee; */
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  /* color: red; */
+  /* font-size: 32px; */
+}
+.fa-trash-alt {
+  font-size: 35px;
+}
+
+.text {
+  text-align: center;
+  padding: 5px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.buttons {
+  text-align: center;
+  /*  border-top: 1px solid #eee; */
+  border-top: 1px solid red;
+  padding: 5px 10px;
+  margin-top: 30px;
+  /*  font-size: 40px; */
+}
+
+/* .button {
+  font-family: Arial;
+  font-size: 15pt;
+  color: #fd3e81;
+  background-color: #f1d302;
+  border: none;
+  border-radius: 2px;
+} */
+.button-borrar {
+  font-family: Arial;
+  font-size: 13pt;
+  width: 14%;
+  height: 40px;
+  color: white;
+  background-color: #3085d6;
+  border: none;
+  border-radius: 2px;
+  margin: 10px;
+}
+.button-cancelar {
+  font-family: Arial;
+  font-size: 13pt;
+  width: 14%;
+  height: 40px;
+  color: white;
+  background-color: #d33;
+  border: none;
+  border-radius: 2px;
+}
+
 .header h3 {
   display: flex;
   background-color: #f1d302;
@@ -22,14 +106,14 @@ body {
   width: 100%;
 }
 
-.container-p {
+.header-container-promo {
   max-width: 150px;
   position: absolute;
   text-align: center;
   padding-left: 68%;
   position: fixed;
 }
-.anuncio-promo p {
+.header-anuncio-promo p {
   /*  background-color: #fd3e81; */
   background-color: #f1d302;
   border-radius: 3px;
@@ -43,7 +127,7 @@ body {
   position: fixed;
 }
 
-.container-promo-list {
+.header-container-promo-list {
   background-color: #fd3e81;
   border-radius: 3px;
   /*   margin-top: 2px; */
@@ -136,12 +220,76 @@ ul {
   }
 }
 
-.container {
+.header-cantidad-car-lis {
   display: flex;
-  flex-direction: column;
   position: fixed;
+  margin-left: 1%;
 }
-.fecha {
+
+.header-cantidad-car-lis input#totales.header-valor-car {
+  /*  margin-left: 6.9%; */
+  /* margin-left: 8%; */
+  margin-left: 110%;
+}
+
+.header-cantidad-car-lis input#count.header-valor-list {
+  /* margin-left: 6.7%; */
+  margin-left: 130%;
+}
+
+.header-valor-car {
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 20px;
+  width: 25px;
+  border: 0;
+  margin-top: -15px;
+  /*  margin-left: 8%; */
+}
+
+.header-valor-list {
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 20px;
+  width: 25px;
+  border: 0;
+  margin-top: -15px;
+}
+
+.header-images-compra {
+  display: flex;
+  position: fixed;
+  margin-left: 5%;
+  margin-top: 35px;
+}
+
+.header-images-compra img.header-cart-compras {
+  height: 30px;
+  width: auto;
+  /*  padding-left: 6.9%; */
+  /* padding-left: 40%; */
+  margin-top: -33px;
+  /* position: absolute; */
+  /* position: fixed; */
+}
+.header-images-compra img.header-list-compras {
+  height: 30px;
+  width: auto;
+  /* padding-left: 6.5%; */
+  /* padding-left: 10.5%; */
+  margin-top: -33px;
+  /*  position: absolute; */
+  /*  position: fixed; */
+  margin-left: 95%;
+}
+
+.header-fecha {
   border-radius: 25px;
   font-family: "Muli", sans-serif;
   color: #423a01;
@@ -155,6 +303,12 @@ ul {
   position: fixed;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
 .table-repsonsive {
   /*  margin: -58px 2px 2px 2px; */
   margin: -27px 2px 2px 2px;
@@ -162,73 +316,6 @@ ul {
 
 .form-control.car {
   text-align: left;
-}
-
-.images-compra {
-  display: flex;
-  position: fixed;
-  margin-left: 5%;
-}
-
-.images-compra img.cart-compras {
-  height: 30px;
-  width: auto;
-  /*  padding-left: 6.9%; */
-  /* padding-left: 40%; */
-  margin-top: -33px;
-  /* position: absolute; */
-  /* position: fixed; */
-}
-.images-compra img.list-compras {
-  height: 30px;
-  width: auto;
-  /* padding-left: 6.5%; */
-  /* padding-left: 10.5%; */
-  margin-top: -33px;
-  /*  position: absolute; */
-  /*  position: fixed; */
-  margin-left: 95%;
-}
-.cantidad-car-lis {
-  display: flex;
-  position: fixed;
-  margin-left: 1%;
-}
-
-.cantidad-car-lis input#totales.valor-car {
-  /*  margin-left: 6.9%; */
-  /* margin-left: 8%; */
-  margin-left: 110%;
-}
-
-.valor-car {
-  color: black;
-  font-weight: 700;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 50%;
-  height: 20px;
-  width: 25px;
-  border: 0;
-  margin-top: -30px;
-  /*  margin-left: 8%; */
-}
-
-.cantidad-car-lis input#count.valor-list {
-  /* margin-left: 6.7%; */
-  margin-left: 130%;
-}
-
-.valor-list {
-  color: black;
-  font-weight: 700;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 50%;
-  height: 20px;
-  width: 25px;
-  border: 0;
-  margin-top: -30px;
 }
 
 .table-bordered th,
@@ -357,13 +444,13 @@ input[type="checkbox"]:checked:before {
     flex-direction: column;
     align-items: center;
   }
-  .images-compra {
+  .header-images-compra {
     display: flex;
     position: fixed;
     margin-left: 0%;
   }
 
-  .images-compra img.list-compras {
+  .header-images-compra img.list-compras {
     height: 30px;
     width: auto;
     /* padding-left: 6.5%; */
@@ -374,23 +461,36 @@ input[type="checkbox"]:checked:before {
     margin-left: 5%;
   }
 
-  img.cart-compras {
+  .header-images-compra img.header-cart-compras {
     height: 30px;
     width: auto;
     padding-left: 5.4%;
   }
-  img.list-compras {
+  .header-images-compra img.header-list-compras {
     height: 30px;
     width: auto;
-    padding-left: 6.5%;
+    padding-left: 2.5%;
   }
-  .cantidad-car-lis input#totales.valor-car {
+  .header-cantidad-car-lis input#totales.header-valor-car {
     /*  margin-left: 6.9%; */
     /* margin-left: 8%; */
     margin-left: 1%;
   }
 
-  .valor-car {
+  /*  .header-cantidad-car-lis input#totales.header-valor-car {
+    margin-left: 6.2%;
+  } */
+
+  .header-cantidad-car-lis input#count.header-valor-list {
+    margin-left: 140%;
+  }
+
+  /* .cantidad-car-lis input#count.valor-list {
+    
+    margin-left: 28%;
+  } */
+
+  .header-valor-car {
     color: black;
     font-weight: 700;
     text-align: center;
@@ -399,16 +499,11 @@ input[type="checkbox"]:checked:before {
     height: 20px;
     width: 25px;
     border: 0;
-    margin-top: -30px;
+    margin-top: -15px;
     /*  margin-left: 8%; */
   }
 
-  .cantidad-car-lis input#count.valor-list {
-    /* margin-left: 6.7%; */
-    margin-left: 28%;
-  }
-
-  .valor-list {
+  .header-valor-list {
     color: black;
     font-weight: 700;
     text-align: center;
@@ -417,14 +512,7 @@ input[type="checkbox"]:checked:before {
     height: 20px;
     width: 25px;
     border: 0;
-    margin-top: -30px;
-  }
-  input#count.valor-list {
-    margin-left: 7.9%;
-  }
-
-  input#totales.valor-car {
-    margin-left: 6.2%;
+    margin-top: -15px;
   }
 
   th {

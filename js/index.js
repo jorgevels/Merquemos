@@ -1,5 +1,7 @@
 $(document).ready(function() {
   $(document).on("click", ".add", function() {
+    /* var articulos = document.querySelector("#artículo"); */
+
     var html = "";
     html += "<tr>";
     html += '<td><input type="checkbox" name="chekc"  class="form-controls">';
@@ -80,8 +82,3 @@ $(document).ready(function() {
     document.getElementById("count").value = count - 1;
   });
 });
-
-//]]>
-
-/* id="cbox1" value="first_checkbox"  */
-/* class=" form-control item_name"   */
