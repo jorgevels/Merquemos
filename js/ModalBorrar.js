@@ -3,6 +3,10 @@ document.getElementById("MiFormulario").addEventListener("submit", submit);
 document.getElementById("ok").addEventListener("click", enviar);
 document.getElementById("ko").addEventListener("click", cancelar);
 
+handlesubmit = e => {
+  e.preventDefault();
+};
+
 // Funcion que se ejecuta al pulsar el botón enviar el formulario
 function submit(e) {
   // Cancelams el envio a la espera de que valide el formulario
@@ -13,21 +17,15 @@ function submit(e) {
 }
 
 // Funcion que se ejecuta al pulsar el boton Enviar de cuadro de dialogo
-function enviar() {
+function enviar(e) {
   // Escondemos la capa
   document.getElementById("capa").style.display = "none";
-
+  e.preventDefault();
   // Enviamos el formulario
-  /* var agregarArticulo = document.querySelector("#MiFormulario"); */
 
-  /* agregarArticulo.addEventListener("submit", function(event) { */
   // No envíe el formulario
-  document.forms["MiFormulario"].submit(event => {
-    event.preventDefault();
-
-    /*  const $MiFormulario = document.querySelector("#MiFormulario");
-  $MiFormulario.addEventListener("submit", event => { */
-    /* event.preventDefault(); */
+  document.forms["MiFormulario"].submit(e => {
+    e.preventDefault();
   });
 }
 
@@ -36,29 +34,3 @@ function cancelar(e) {
   // Simplemente escondemkos el formulario
   document.getElementById("capa").style.display = "none";
 }
-
-/* function pregunta() {
-  if (!confirm("¿Esta seguro de que desea borrar los articulos de la lista?")) {
-    e.preventDefault();
-  }
-} */
-
-/* function pregunta() {
-  return Swal.fire({
-    title: "Estas seguro?",
-    text: "No podrar recuperarlo!",
-    type: "warning",
-    showCancelButton: true,
-    confirmButtonColor: "#3085d6",
-    cancelButtonColor: "#d33",
-    confirmButtonText: "Borrar"
-  }).then(result => {
-    if (
-      !confirm("¿Esta seguro de que desea borrar los articulos de la lista?")
-    ) {
-      e.preventDefault();
-
-      Swal.fire("Elminado!", "Tu lista fue eliminada.", "success");
-    }
-  });
-} */

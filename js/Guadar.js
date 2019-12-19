@@ -1,6 +1,6 @@
-window.onbeforeunload = function(e) {
-  e.preventDefault();
-  return "";
+window.onbeforeunload = function() {
+  /* e.preventDefault(); */
+  return "Deseas recargar la pagina";
 };
 
 /* constructor($elem);
