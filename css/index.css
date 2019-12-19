@@ -219,11 +219,15 @@ ul {
     margin-top: -200px;
   }
 }
+/* .container-compras {
+  justify-content: center;
+  align-items: center;
+} */
 
 .header-cantidad-car-lis {
   display: flex;
   position: fixed;
-  margin-left: 1%;
+  /* margin-left: 20%; */
 }
 
 .header-cantidad-car-lis input#totales.header-valor-car {
@@ -265,28 +269,30 @@ ul {
 .header-images-compra {
   display: flex;
   position: fixed;
-  margin-left: 5%;
+  /*  margin-left: 5%; */
   margin-top: 35px;
 }
 
 .header-images-compra img.header-cart-compras {
   height: 30px;
-  width: auto;
+  /*  width: auto; */
   /*  padding-left: 6.9%; */
   /* padding-left: 40%; */
   margin-top: -33px;
+  margin-left: 90%;
   /* position: absolute; */
   /* position: fixed; */
 }
 .header-images-compra img.header-list-compras {
   height: 30px;
-  width: auto;
+  /* width: auto; */
   /* padding-left: 6.5%; */
   /* padding-left: 10.5%; */
   margin-top: -33px;
   /*  position: absolute; */
   /*  position: fixed; */
-  margin-left: 95%;
+  /*  margin-left: 95%; */
+  margin-left: 100%;
 }
 
 .header-fecha {
@@ -447,30 +453,20 @@ input[type="checkbox"]:checked:before {
   .header-images-compra {
     display: flex;
     position: fixed;
-    margin-left: 0%;
-  }
-
-  .header-images-compra img.list-compras {
-    height: 30px;
-    width: auto;
-    /* padding-left: 6.5%; */
-    /* padding-left: 10.5%; */
-    margin-top: -33px;
-    /*  position: absolute; */
-    /*  position: fixed; */
-    margin-left: 5%;
+    /* margin-left: 0%; */
   }
 
   .header-images-compra img.header-cart-compras {
     height: 30px;
-    width: auto;
-    padding-left: 5.4%;
+    /*  width: auto; */
+    margin-left: 3%;
   }
   .header-images-compra img.header-list-compras {
     height: 30px;
-    width: auto;
-    padding-left: 2.5%;
+    /* width: auto; */
+    margin-left: 50%;
   }
+
   .header-cantidad-car-lis input#totales.header-valor-car {
     /*  margin-left: 6.9%; */
     /* margin-left: 8%; */
@@ -482,13 +478,8 @@ input[type="checkbox"]:checked:before {
   } */
 
   .header-cantidad-car-lis input#count.header-valor-list {
-    margin-left: 140%;
+    margin-left: 75%;
   }
-
-  /* .cantidad-car-lis input#count.valor-list {
-    
-    margin-left: 28%;
-  } */
 
   .header-valor-car {
     color: black;
@@ -500,7 +491,6 @@ input[type="checkbox"]:checked:before {
     width: 25px;
     border: 0;
     margin-top: -15px;
-    /*  margin-left: 8%; */
   }
 
   .header-valor-list {
