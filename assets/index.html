@@ -98,14 +98,28 @@
           <th>Nombre del Articulo</th>
           <th>Cantidad</th>
           <th>Unidad</th>
-          <th><button type="button" name="add" class="btn btn-success btn-sm add"><span
-                class="glyphicon glyphicon-plus"></span></button></th>
+          <th>🛒</th>
+          <!-- <th>Boton</th> -->
+          <!-- <th><button type="button" name="add" class="btn btn-success btn-sm add"><span
+                class="glyphicon glyphicon-plus"></span></button></th> -->
         </tr>
       </table>
-      <div id="advertencia" class="advertencia" align="center">
+      <section id="advertencia" class="button__container">
 
-        <input type="submit" class="btn btn-info" id="ejecuta" value="Borrar lista" />
-      </div>
+        <!--  <input type="submit" class="btn btn-info" id="ejecuta" value="Borrar lista" />
+        <input type="submit" class="btn btn-info" id="ejecuta" value="Borrar lista" /> -->
+        <div class="button--delete">
+          <input type="submit" id="ejecuta" value="Borrar lista"
+            class="boton__borrar--lista btn btn-danger btn-sx remove">
+          </input>
+        </div>
+
+        <div class="button--add">
+          <button type="button" name="add" class="boton__agregar--articulo btn btn-success btn-sx add"><span
+              class="glyphicon glyphicon-plus"></span></button>
+        </div>
+      </section>
+
     </div>
   </form>
 
@@ -121,6 +135,7 @@
     <option value="Arracacha">
     <option value="Arroz">
     <option value="Avena">
+    <option value="Azucar">
     <option value="Bananos">
 
     <option value="Brócoli">
@@ -249,11 +264,11 @@
 
 
 <script src="../js/index.js"></script>
-<script src="../js/Modal.js"></script>
+<script src="../js/ModalInfo.js"></script>
 <script src="../js/ModalBorrar.js"></script>
 <script src="../js/ConfirmacionClosse.js"></script>
-<script src="../js/Guadar.js"></script>
-<script src="../js/inde.js"></script>
+<script src="../js/NoRefresc.js"></script>
+
 
 
 

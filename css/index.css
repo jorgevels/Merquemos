@@ -316,7 +316,6 @@ ul {
 }
 
 .table-repsonsive {
-  /*  margin: -58px 2px 2px 2px; */
   margin: -27px 2px 2px 2px;
 }
 
@@ -385,8 +384,33 @@ input[type="checkbox"]:checked:before {
   margin: -15px 0 45px 0;
 }
 
+/* .btn-danger {
+  margin: -15px 0 45px 0;
+} */
+
 .glyphicon {
   position: inherit;
+  /* color: red; */
+  margin-right: 40%;
+}
+.button__container {
+  display: grid;
+  grid-template-columns: 5;
+  height: 60px;
+
+  justify-items: end;
+  align-items: center;
+}
+
+.button--delete {
+  margin: -10px 0 50px 0;
+  grid-column: 3;
+}
+
+.button--add {
+  margin: -10px 4px 50px 0;
+  grid-column: 5;
+  width: 40px;
 }
 
 .footer {
@@ -453,29 +477,20 @@ input[type="checkbox"]:checked:before {
   .header-images-compra {
     display: flex;
     position: fixed;
-    /* margin-left: 0%; */
   }
 
   .header-images-compra img.header-cart-compras {
     height: 30px;
-    /*  width: auto; */
     margin-left: 3%;
   }
   .header-images-compra img.header-list-compras {
     height: 30px;
-    /* width: auto; */
     margin-left: 50%;
   }
 
   .header-cantidad-car-lis input#totales.header-valor-car {
-    /*  margin-left: 6.9%; */
-    /* margin-left: 8%; */
     margin-left: 1%;
   }
-
-  /*  .header-cantidad-car-lis input#totales.header-valor-car {
-    margin-left: 6.2%;
-  } */
 
   .header-cantidad-car-lis input#count.header-valor-list {
     margin-left: 75%;
